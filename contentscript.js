@@ -58,7 +58,7 @@ function appendUI(){
     sidebar.insertBefore(ui, sidebar.firstChild);
   }else{ //PlanB
     ui.style.position = 'absolute';
-    ui.style.top = '10px';
+    ui.style.top = '50px';
     ui.style.left = '10px';
     document.body.appendChild(ui);
   }
