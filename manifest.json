@@ -1,6 +1,6 @@
 {
   "name": "YouTube Repeat",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Repeat YouTube videos.",
   "icons": {
     "16": "icons/16.png",
@@ -8,6 +8,7 @@
     "32": "icons/32.png",
     "48": "icons/48.png"
   },
+  "manifest_version": 2,
   "content_scripts": [{
     "matches": ["http://*.youtube.com/*", "https://*.youtube.com/*"],
     "js": ["contentscript.js"]

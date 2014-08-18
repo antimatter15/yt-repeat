@@ -11,10 +11,10 @@ function watchPage(){
 function checkCompletion(){ //this is the key part
   var html5 = document.querySelector('video.video-stream');
   var flash = document.getElementById("movie_player");
-  if(flash){
-    if(flash.getCurrentTime() == flash.getDuration()) flash.playVideo();
-  }else if(html5){  
+  if(html5){  
     if(html5.currentTime == html5.duration) html5.play();
+  }else if(flash){
+    if(flash.getCurrentTime() == flash.getDuration()) flash.playVideo();
   }
 }
 
@@ -51,7 +51,7 @@ function createUI(){
 
 
 function appendUI(){
-  var sidebar = document.getElementById('watch-sidebar');
+  var sidebar = document.querySelector('#watch-description-extra-info');
   var ui = createUI();
   if(sidebar){ //insert before sidebar
     ui.className = 'watch-module';
